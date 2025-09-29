@@ -1,12 +1,12 @@
 {
-  "name": "atv-tarefas",
+  "name": "tarefas",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "start": "nodemon --exec babel-node ./api/index.js"
   },
   "keywords": [],
-  "author": "Ewayrton Oliveira",
+  "author": "Ítalo Veçoza",
   "license": "MIT",
   "type": "module",
   "description": "",
