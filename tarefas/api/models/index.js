@@ -35,7 +35,7 @@ const sequelize = new Sequelize(process.env.POSTGRES_URL, {
 });
 
 const models = {
-  Tarefa: getTarefaModel(sequelize, Sequelize),
+  tarefa: getTarefaModel(sequelize, Sequelize),
 };
 
 Object.keys(models).forEach((key) => {
