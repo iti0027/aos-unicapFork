@@ -1,6 +1,6 @@
 import Sequelize from "sequelize";
 import pg from "pg";
-import getTarefaModel from "./Tarefa.js";
+import getTarefaModel from "./tarefa.js";
 
 
 // !!! Simular a conexão com um banco de dados em memória !!! \\

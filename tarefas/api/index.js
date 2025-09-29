@@ -3,7 +3,7 @@ dotenv.config();
 
 import express from 'express';
 import cors from 'cors';
-import tarefasRoutes from './routes/tarefasRoutes.js';
+import tarefasRoutes from './route/tarefasRoutes.js';
 import { sequelize } from './models/index.js';
 
 // Sincroniza o modelo com o banco de dados
