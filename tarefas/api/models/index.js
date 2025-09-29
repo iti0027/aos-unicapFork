@@ -3,6 +3,7 @@ import pg from "pg";
 import getTarefaModel from "./tarefa.js";
 
 
+
 // !!! Simular a conexão com um banco de dados em memória !!! \\
 //const sequelize = new Sequelize("database", "username", "password", {
 //  dialect: "sqlite",
