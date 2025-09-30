@@ -1,19 +1,9 @@
 import Sequelize from "sequelize";
 import pg from "pg";
 import getTarefaModel from "./tarefa.js";
+import "dotenv/config";
 
 
-
-// !!! Simular a conexão com um banco de dados em memória !!! \\
-//const sequelize = new Sequelize("database", "username", "password", {
-//  dialect: "sqlite",
-//  storage: ":memory:",
-//  logging: false, 
-//});
-
-if (!process.env.POSTGRES_URL) {
-  throw new Error('A variável de ambiente POSTGRES_URL não está definida.');
-}
 
 const sequelize = new Sequelize(process.env.POSTGRES_URL, {
   dialect: 'postgres',
@@ -44,8 +34,6 @@ Object.keys(models).forEach((key) => {
     models[key].associate(models);
   }
 });
-
-
 
 export { sequelize };
 
